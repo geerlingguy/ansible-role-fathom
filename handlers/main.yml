@@ -1,0 +1,3 @@
+---
+- name: restart fathom
+  service: name=fathom state=restarted

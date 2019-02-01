@@ -1,0 +1,12 @@
+---
+fathom_binary_url: https://github.com/usefathom/fathom/releases/download/v1.2.1/fathom_1.2.1_linux_amd64.tar.gz
+fathom_force_update: false
+
+fathom_service_state: started
+fathom_service_enabled: true
+fathom_service_user: root
+
+fathom_directory: /opt/fathom
+fathom_http_port: "9000"
+fathom_database_name: fathom.db
+fathom_secret: secret-string-here
