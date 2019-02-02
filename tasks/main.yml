@@ -38,3 +38,4 @@
     name: fathom
     state: "{{ fathom_service_state }}"
     enabled: "{{ fathom_service_enabled }}"
+  when: fathom_manage_service

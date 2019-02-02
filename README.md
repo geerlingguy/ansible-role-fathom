@@ -22,6 +22,7 @@ The URL from which Fathom will be downloaded. Override for a newer or different 
 
 If changing versions, use this flag to force Ansible to change Fathom versions on the server.
 
+    fathom_manage_service: true
     fathom_service_state: started
     fathom_service_enabled: true
     fathom_service_user: root
