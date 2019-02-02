@@ -1,3 +1,4 @@
 ---
 - name: restart fathom
   service: name=fathom state=restarted
+  when: fathom_manage_service
