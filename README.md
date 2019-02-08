@@ -8,7 +8,7 @@ After the playbook is finished, visit the fathom interface (on port 9000 by defa
 
 ## Requirements
 
-N/A, though you may wish to also install and configure Nginx as a proxy for security and stability reasons.
+N/A, though you may wish to also install and configure Nginx as a proxy for security and stability reasons, and Certbot to acquire and use a valid TLS certificate for HTTPS (recommended roles: `geerlingguy.nginx` and `geerlingguy.certbot`).
 
 ## Role Variables
 
@@ -56,6 +56,12 @@ None.
 *Inside `vars/main.yml`*:
 
     fathom_secret: insert-a-secret-string-here
+
+## Use with Nginx as a proxy
+
+**See**: [Fathom playbook example using Nginx as a proxy](molecule/default/playbook-nginx.yml).
+
+Note that you can also add the role `geerlingguy.certbot` if you want to install certbot and configure a default certificate to work with the Nginx server configuration for HTTPS on your Fathom installation.
 
 ## License
 
