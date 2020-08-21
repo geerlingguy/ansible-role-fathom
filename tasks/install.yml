@@ -8,6 +8,7 @@
   file:
     path: /tmp/fathom
     state: directory
+    mode: 0755
   when: >
     not fathom_bin.stat.exists
     or fathom_force_update
@@ -17,6 +18,7 @@
     src: "{{ fathom_binary_url }}"
     dest: /tmp/fathom
     remote_src: true
+    mode: 0755
   register: archive_contents
   when: >
     not fathom_bin.stat.exists

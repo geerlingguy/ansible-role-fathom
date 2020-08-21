@@ -16,11 +16,13 @@
   file:
     path: "{{ fathom_directory }}"
     state: directory
+    mode: 0755
 
 - name: Copy Fathom config into place.
   template:
     src: fathom-config.j2
     dest: "{{ fathom_directory }}/.env"
+    mode: 0644
   notify: restart fathom
 
 - name: Copy Fathom systemd unit file into place (for systemd systems).
