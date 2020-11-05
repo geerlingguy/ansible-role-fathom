@@ -1,6 +1,6 @@
 # Ansible Role: Fathom
 
-[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-fathom.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-fathom)
+[![CI](https://github.com/geerlingguy/ansible-role-fathom/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-fathom/actions?query=workflow%3ACI)
 
 Installs [Fathom](https://github.com/usefathom/fathom), a Go-based website analytics system.
 
