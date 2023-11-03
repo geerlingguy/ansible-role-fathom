@@ -14,7 +14,7 @@ N/A, though you may wish to also install and configure Nginx as a proxy for secu
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    fathom_binary_url: https://github.com/usefathom/fathom/releases/download/v1.2.1/fathom_1.2.1_linux_amd64.tar.gz
+    fathom_binary_url: https://github.com/usefathom/fathom/releases/download/v1.3.1/fathom_1.3.1_linux_amd64.tar.gz
 
 The URL from which Fathom will be downloaded. Override for a newer or different version, or to lock in a specific version.
 
