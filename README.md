@@ -1,6 +1,6 @@
 # Ansible Role: Fathom
 
-[![CI](https://github.com/geerlingguy/ansible-role-fathom/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-fathom/actions?query=workflow%3ACI)
+[![CI](https://github.com/geerlingguy/ansible-role-fathom/actions/workflows/ci.yml/badge.svg)](https://github.com/geerlingguy/ansible-role-fathom/actions/workflows/ci.yml)
 
 Installs [Fathom](https://github.com/usefathom/fathom), a Go-based website analytics system.
 
