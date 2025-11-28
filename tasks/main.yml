@@ -4,11 +4,11 @@
 
 - name: Ensure SQLite is installed (Red Hat).
   package: name=sqlite state=present
-  when: ansible_os_family == 'RedHat'
+  when: ansible_facts.os_family == 'RedHat'
 
 - name: Ensure SQLite is installed (Debian).
   package: name=sqlite3 state=present
-  when: ansible_os_family == 'Debian'
+  when: ansible_facts.os_family == 'Debian'
 
 - include_tasks: install.yml
 
@@ -33,7 +33,7 @@
     group: root
     mode: 0755
   notify: restart fathom
-  when: "ansible_service_mgr == 'systemd'"
+  when: "ansible_facts.service_mgr == 'systemd'"
 
 - name: Ensure Fathom service is in the correct state.
   service:
